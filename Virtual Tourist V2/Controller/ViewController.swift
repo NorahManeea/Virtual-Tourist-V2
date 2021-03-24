@@ -91,7 +91,7 @@ class ViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsContr
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "photosSegue" {
-        let controller = segue.destination as! ViewController
+        let controller = segue.destination as! PhotoViewController
         controller.chosenPin = sender as? Pin
     }
 }

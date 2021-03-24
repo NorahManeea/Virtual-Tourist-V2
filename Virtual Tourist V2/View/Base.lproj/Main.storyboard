@@ -44,6 +44,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Xcz-lM-RcV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="719" id="669-vc-mG9"/>
                             <constraint firstAttribute="bottom" secondItem="XYb-YS-Xoh" secondAttribute="bottom" id="8UN-OB-KOj"/>
@@ -52,6 +53,9 @@
                             <constraint firstAttribute="trailing" secondItem="XYb-YS-Xoh" secondAttribute="trailing" id="cMU-RY-CbQ"/>
                             <constraint firstItem="Xcz-lM-RcV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e3e-Mb-OWw"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3Om-pD-pv3" appends="YES" id="wCT-9d-VTu"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Virtual Tourist" id="bRA-Mj-bRp">
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="7no-JB-W6h"/>
@@ -64,9 +68,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="NFt-J8-MZu">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="3Om-pD-pv3">
                     <connections>
-                        <action selector="thisPress:" destination="BYZ-38-t0r" id="GnS-Fe-WBx"/>
+                        <action selector="thisPress:" destination="BYZ-38-t0r" id="m0H-vp-Sbw"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>

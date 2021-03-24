@@ -12,7 +12,7 @@ class DataController {
     
     static let shared = DataController()
     
-    let persistentContainer = NSPersistentContainer(name: "VirtualTourist")
+    let persistentContainer = NSPersistentContainer(name: "Data")
     
     var viewContext:NSManagedObjectContext {
         return persistentContainer.viewContext
