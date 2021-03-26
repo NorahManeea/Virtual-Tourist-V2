@@ -100,7 +100,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="E7e-h8-FWk" customClass="PhotoCollectionViewCell" customModule="Virtual_Tourist_V2" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="E7e-h8-FWk" customClass="PhotoCollectionViewCell" customModule="Virtual_Tourist_V2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="143" height="146"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ehs-iy-Meq">
@@ -143,6 +143,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="3GS-EP-oMs" id="8h6-qV-t7c"/>
+                                    <outlet property="delegate" destination="3GS-EP-oMs" id="ffB-cv-3Em"/>
+                                </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3t-mM-CNo">
                                 <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
@@ -192,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yg1-0d-BwQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618.840579710145" y="105.80357142857143"/>
+            <point key="canvasLocation" x="1486" y="104"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VxQ-jh-t5n">

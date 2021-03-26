@@ -35,6 +35,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         super.viewDidLoad()
         theLabel.isHidden = true
         setupFetchedResultController()
+      
 }
     
     override func viewDidDisappear(_ animated: Bool) {

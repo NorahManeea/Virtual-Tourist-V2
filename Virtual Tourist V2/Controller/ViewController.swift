@@ -49,6 +49,8 @@ class ViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsContr
         navigationItem.title = "Virtual Tourist"
         navigationItem.rightBarButtonItem = editButtonItem
         pinsToEditView.isHidden = true
+        vMap.delegate = self
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
