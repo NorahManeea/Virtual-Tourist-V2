@@ -31,6 +31,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         return (fetchedResultsController.fetchedObjects?.count ?? 0) != 0
     }
     
+    //Life Cycles:
     override func viewDidLoad() {
         super.viewDidLoad()
         theLabel.isHidden = true
@@ -72,6 +73,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
     }
     
+    // MARK: Add New Collection Button
     @IBAction func newCollectionButton(_ sender: Any) {
         
         updateTheUI(processing: true)
@@ -88,7 +90,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             
             self.updateTheUI(processing: false)
             guard error == nil else {
-                self.displayAlert(title: "Unable to get photos from Flickr", message: error?.localizedDescription)
+                self.displayAlert(title: "Unable to get photos", message: error?.localizedDescription)
                 return
             }
             if results!.isEmpty {

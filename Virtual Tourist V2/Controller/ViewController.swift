@@ -42,7 +42,7 @@ class ViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsContr
             fatalError("The fetch couldn't be performed: \(error.localizedDescription)")
         }
     }
-    
+    // MARK:Life cycles methods:
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,6 +64,7 @@ class ViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsContr
         fetchedResultsController = nil
     }
     
+//
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         pinsToEditView.isHidden = !editing
